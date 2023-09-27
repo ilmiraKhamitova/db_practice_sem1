@@ -1,5 +1,5 @@
 create table review (
 	user_id bigint,
-	date date,
-	text varchar
+	publication_date date,
+	massage_text varchar
 );
