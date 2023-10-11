@@ -1,0 +1,1 @@
+alter table application alter column id set default nextval('application_seq');

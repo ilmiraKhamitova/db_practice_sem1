@@ -1,0 +1,1 @@
+alter table contract add column id bigint primary key;

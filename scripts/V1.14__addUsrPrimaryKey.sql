@@ -1,0 +1,1 @@
+alter table usr add primary key(user_id);

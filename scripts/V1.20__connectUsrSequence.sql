@@ -1,0 +1,1 @@
+alter table usr alter column user_id set default nextval('usr_seq');

@@ -1,0 +1,1 @@
+create sequence application_seq;
