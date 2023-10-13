@@ -1,0 +1,1 @@
+create sequence messenger_seq;

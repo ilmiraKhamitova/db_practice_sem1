@@ -1,0 +1,1 @@
+alter table messenger add column id bigint primary key;

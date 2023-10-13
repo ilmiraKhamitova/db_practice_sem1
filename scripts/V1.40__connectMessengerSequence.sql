@@ -1,0 +1,1 @@
+alter table messenger alter column id set default nextval('messenger_seq');

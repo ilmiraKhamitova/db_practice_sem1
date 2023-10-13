@@ -1,0 +1,1 @@
+alter table review add column id bigint primary key;

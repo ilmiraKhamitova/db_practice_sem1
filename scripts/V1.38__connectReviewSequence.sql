@@ -1,0 +1,1 @@
+alter table review alter column id set default nextval('review_seq');

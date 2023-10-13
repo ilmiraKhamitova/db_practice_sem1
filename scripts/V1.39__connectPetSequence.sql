@@ -1,0 +1,1 @@
+alter table pet alter column pet_id set default nextval('pet_seq');

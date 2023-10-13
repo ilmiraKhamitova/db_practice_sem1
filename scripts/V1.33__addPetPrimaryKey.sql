@@ -1,0 +1,1 @@
+alter table pet add primary key(pet_id);
