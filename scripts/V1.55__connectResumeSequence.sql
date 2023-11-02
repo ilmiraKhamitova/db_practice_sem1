@@ -1,0 +1,1 @@
+alter table resume alter column id set default nextval('resume_seq');

@@ -1,0 +1,1 @@
+alter table resume add primary key(id);

@@ -1,0 +1,1 @@
+alter table advertisers add column id bigint primary key;
