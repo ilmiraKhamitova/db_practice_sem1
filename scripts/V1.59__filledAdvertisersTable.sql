@@ -1,0 +1,10 @@
+insert into advertisers(company, description, publication_date, contract_price) values ('OZON', 'мы - лучший магазин', '2022-10-10 11:30:30', 100000);
+insert into advertisers(company, description, publication_date, contract_price) values ('Skillbox', 'мы мошенники', '2023-10-10 11:30:30', 100000);
+insert into advertisers(company, description, publication_date, contract_price) values ('Start', 'смотрите фильмы и сериалы только у нас', '2023-11-10 11:30:30', 70000);
+insert into advertisers(company, description, publication_date, contract_price) values ('IKEA', 'нас не существует', '2022-12-10 11:30:30', 5);
+insert into advertisers(company, description, publication_date, contract_price) values ('Светильники Казань', 'осветим вашу жизнь', '2023-03-10 11:30:30', 23000);
+insert into advertisers(company, description, publication_date, contract_price) values ('Ван Гог', 'купите мои картины пожалуйста', '2022-11-28 11:30:30', 10000);
+insert into advertisers(company, description, publication_date, contract_price) values ('Кинопоиск', 'вышел новый сериал!!!', '2023-02-14 11:30:30', 100000);
+insert into advertisers(company, description, publication_date, contract_price) values ('Wildberries', 'скоро черная пятница!', '2023-11-04 11:30:30', 110000);
+insert into advertisers(company, description, publication_date, contract_price) values ('КФУ', 'Поступайте к нам', '2023-09-09 11:30:30', 30000);
+insert into advertisers(company, description, publication_date, contract_price) values ('Карамельково', 'лучшие сладости во всей России', '2022-10-10 11:30:30', 50000);
