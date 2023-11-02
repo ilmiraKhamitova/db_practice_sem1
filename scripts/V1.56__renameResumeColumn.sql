@@ -1,0 +1,1 @@
+ALTER TABLE resume RENAME COLUMN employee_id TO user_id;
