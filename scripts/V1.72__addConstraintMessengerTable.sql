@@ -1,0 +1,5 @@
+ALTER TABLE messenger 
+	ALTER COLUMN message SET NOT NULL,
+	ALTER COLUMN publication_date SET NOT NULL,
+	ALTER COLUMN sender_id SET NOT NULL,
+	ALTER COLUMN reciever_id SET NOT NULL;
