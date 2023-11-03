@@ -1,0 +1,6 @@
+ALTER TABLE resume 
+	ALTER COLUMN description SET NOT NULL,
+	ALTER COLUMN publication_date SET NOT NULL,
+	ALTER COLUMN user_id SET NOT NULL,
+	ALTER COLUMN place_id SET NOT NULL,
+	ADD CONSTRAINT salary CHECK(salary >= 16242);
