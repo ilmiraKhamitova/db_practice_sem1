@@ -33,7 +33,7 @@ public class Generator {
         long offset = Timestamp.valueOf(from).getTime();
         long end = Timestamp.valueOf(to).getTime();
         long diff = end - offset + 1;
-        return new Timestamp(offset + random.nextLong() * diff);
+        return new Timestamp(offset + random.nextInt(100) * diff / 100);
     }
 
     public static Boolean getBoolean() {
