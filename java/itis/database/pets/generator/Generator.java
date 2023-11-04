@@ -18,6 +18,10 @@ public class Generator {
         return random.nextInt(bound);
     }
 
+    public static Integer getInt(int from, int bound) {
+        return random.nextInt(bound - from) + from;
+    }
+
 // from 0 until bound
     public static BigInteger getBigInt(BigInteger bound) {
         BigInteger randomNumber;
