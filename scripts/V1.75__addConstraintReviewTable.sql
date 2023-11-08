@@ -1,4 +1,0 @@
-ALTER TABLE review 
-	ALTER COLUMN user_id SET NOT NULL,
-	ALTER COLUMN publication_date SET NOT NULL,
-	ALTER COLUMN massage_text SET NOT NULL;
