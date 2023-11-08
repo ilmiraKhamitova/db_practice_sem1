@@ -1,0 +1,2 @@
+alter table messenger
+add foreign key (sender_id) references usr (user_id) on delete cascade on update cascade, add foreign key (reciever_id) references usr (user_id) on delete cascade on update cascade
