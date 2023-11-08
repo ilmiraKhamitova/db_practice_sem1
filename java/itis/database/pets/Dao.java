@@ -127,16 +127,27 @@ public class Dao {
     }
 
     public void saveVacancies() throws SQLException, IOException {
+        String extraSql = "select pet_id, owner_id from pet;";
+        Statement extraStatement = connection.createStatement();
+        ResultSet extraResultSet = extraStatement.executeQuery(extraSql);
+        List<Integer> users = new ArrayList<>();
+        List<Integer> pets = new ArrayList<>();
+        while (extraResultSet.next()) {
+            users.add(extraResultSet.getInt("owner_id"));
+            pets.add(extraResultSet.getInt("pet_id"));
+        }
+
         String sql = "insert into vacancies(description, duration, user_id, pet_id, place_id, publication_date, begin_date) values (?,?,?,?,?,?,?)";
 
         for (int i = 0; i < 10000; i++) {
-            PreparedStatement preparedStatement = connection
-                    .prepareStatement(sql);
+            int index = getInt(users.size());
+
+            PreparedStatement preparedStatement = connection.prepareStatement(sql);
 
             preparedStatement.setString(1, getString("storage\\vacDesc"));
             preparedStatement.setTimestamp(2, getTimestamp("2022-01-01 01:01:01", "2023-11-03 14:40:59"));
-            preparedStatement.setInt(3, getInt(10_000) + 1);
-            preparedStatement.setInt(4, getInt(10_000) + 1);
+            preparedStatement.setInt(3, users.get(index));
+            preparedStatement.setInt(4, pets.get(index));
             preparedStatement.setInt(5, getInt(23) + 1);
             preparedStatement.setTimestamp(6, getTimestamp("2022-01-01 01:01:01", "2023-11-03 14:40:59"));
             preparedStatement.setTimestamp(7, getTimestamp("2022-01-01 01:01:01", "2023-11-03 14:40:59"));
