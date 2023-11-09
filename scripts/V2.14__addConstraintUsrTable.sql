@@ -1,0 +1,1 @@
+alter table usr add constraint contacts_unique unique (contacts);
